@@ -1,3 +1,8 @@
+:root {
+  --button-width: 64px;
+  --button-height: 64px;
+}
+
 .App {
   font-family: sans-serif;
   display: flex;
@@ -5,4 +10,48 @@
   justify-content: center;
   align-items: center;
 }
+
+.button {
+  background-color: white;
+  border-radius: 5px;
+  height: var(--button-height);
+  width: var(--button-width);
+  border: 1px solid rgb(124, 114, 114);
+  transition: all 0.3s ease-in-out;
+}
+
+#clear-button {
+  width: calc(var(--button-width) * 3);
+}
+
+.button:hover {
+  transition: all 0.3s;
+  transform: translate(0, -10px);
+  box-shadow: -2px 2px 2px 2px rgb(134, 125, 125);
+}
+
+.button:focus {
+  border: 0;
+  transform: scale(1.1);
+  transition: all 0.2s;
+}
+
+.input-result {
+  font-size: 20px;
+  border: 0;
+  width: calc(var(--button-width) * 4);
+  text-align: right;
+  height: calc(var(--button-height) / 1.1);
+  padding: 5px;
+  box-sizing: border-box;
+  transition: all 0.3s ease-in-out;
+}
+
+.input-result:hover {
+  font-size: 30px;
+  background-color: rgb(236, 227, 227);
+  border-radius: 10px;
+  transition: all 0.3s;
+}
+
 
