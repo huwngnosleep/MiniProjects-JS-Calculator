@@ -46,14 +46,14 @@ class App extends Component {
       <div className="App">
         <Container>
             <Row>
-                <input onChange={this.inputChange.bind(this)} value={this.state.input} placeholder={this.state.placeholder || 'Input'}/>
+                <input className="input-result" onChange={this.inputChange.bind(this)} value={this.state.input} placeholder={this.state.placeholder || 'Input'}/>
             </Row>
             <Row>
-                <input value={this.state.result} placeholder={'Result'}/>
+                <input className="input-result" value={this.state.result} placeholder={'Result'}/>
             </Row>
           <Container>  
             <Row>
-                <input className="button" onClick={this.clearButtonClick.bind(this)} type="button" value="Clr" />
+                <input id="clear-button" className="button" onClick={this.clearButtonClick.bind(this)} type="button" value="Clr" />
                 <input className="button" onClick={this.inputButtonClick.bind(this)} type="button" value="/" />
             </Row>
             <Row>
