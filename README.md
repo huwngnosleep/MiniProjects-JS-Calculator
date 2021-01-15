@@ -2,6 +2,6 @@ freeCodeCamp Project: JS Calculator
 
 made with ReactJS
 
-not have CSS yet!
+15 Jan, 2021: added CSS
 
-link: https://nwh7o.csb.app/
+link: https://wf9ql.csb.app/
